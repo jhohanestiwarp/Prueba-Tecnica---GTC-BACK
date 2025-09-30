@@ -32,6 +32,7 @@ cd backend-estudiantes
 
 2️⃣ Configurar la base de datos
 
+En application.properties o application.yml:
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/estudiantes
 spring.datasource.username=postgres
@@ -42,42 +43,25 @@ spring.jpa.show-sql=true
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 
 3️⃣ Ejecutar el proyecto
+./gradlew bootRun
 
 
+Por defecto estará en:
+👉 http://localhost:8090
 
-Por defecto se levanta en: http://localhost:8090
-
-🌐 Endpoints disponibles
+🌐 Endpoints principales
 Método	Endpoint	Descripción
 POST	/api/student	Crear estudiante
 GET	/api/student	Listar todos los estudiantes
 GET	/api/student/{id}	Obtener estudiante por ID
 PUT	/api/student	Actualizar estudiante
 DELETE	/api/student/{id}	Eliminar estudiante
-
-Ejemplo de request JSON:
-
-{
-  "firstName": "Carlos",
-  "lastName": "cordoba",
-  "documentType": "CC",
-  "document": "123456789",
-  "age": 25,
-  "email": "carlos@example.com",
-  "state": "Activo",
-  "createdAt": "2025-09-30T14:00:00",
-  "updatedAt": "2025-09-30T14:00:00"
-}
-
 🛠️ Scripts útiles
 
-mvn clean install → compila y empaqueta
+./gradlew clean build → compila y empaqueta
 
-mvn spring-boot:run → ejecuta la app
+./gradlew bootRun → ejecuta la app
 
-mvn test → corre las pruebas unitarias
+./gradlew test → corre las pruebas unitarias
 
-👨‍💻 Autor
-
-Backend desarrollado por Jhohan Palacios
-Prueba técnica con Spring Boot + JPA + REST
+docker-compose up -d → levanta base de datos y servicios auxiliares
