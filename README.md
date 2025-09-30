@@ -27,7 +27,7 @@ Maven como gestor de dependencias
 
 📂 Estructura del proyecto
 
-<img width="455" height="333" alt="image" src="https://github.com/user-attachments/assets/28a8bf1e-49f1-4da0-a306-44551ef0665d" />
+![WhatsApp Image 2025-09-30 at 5 53 37 PM](https://github.com/user-attachments/assets/869a55a4-6951-4fa7-a73b-1b4ec357b66c)
 
 
 ⚙️ Instalación y ejecución
