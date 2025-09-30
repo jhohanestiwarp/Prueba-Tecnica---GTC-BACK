@@ -27,7 +27,7 @@ Maven como gestor de dependencias
 
 ⚙️ Instalación y ejecución
 1️⃣ Clonar el repositorio
-git clone https://github.com/tuusuario/backend-estudiantes.git
+git clone 
 cd backend-estudiantes
 
 2️⃣ Configurar la base de datos
