@@ -3,7 +3,8 @@
 Este proyecto es el backend de la aplicación Interfaz Estudiantil.
 Está desarrollado en Spring Boot y expone una API REST para gestionar estudiantes (crear, listar, editar y eliminar).
 
-🔽 Descargar Postman : https://www.mediafire.com/file/womlucxacv1a2ld/Gts+Estudiantes.postman_collection.json/file
+🔽 Descargar colletion Postman : https://www.mediafire.com/file/womlucxacv1a2ld/Gts+Estudiantes.postman_collection.json/file
+
 
 ![WhatsApp Image 2025-09-30 at 4 45 41 PM](https://github.com/user-attachments/assets/5e1876e8-af3b-4e41-8b98-9af45171f306)
 ![WhatsApp Image 2025-09-30 at 4 46 04 PM](https://github.com/user-attachments/assets/99bd4eb7-9dd8-4711-9405-b981d5eefbf7)
