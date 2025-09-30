@@ -1,9 +1,8 @@
 ⚙️ Backend - API Estudiantes
-![WhatsApp Image 2025-09-30 at 4 45 41 PM](https://github.com/user-attachments/assets/5e1876e8-af3b-4e41-8b98-9af45171f306)
-![WhatsApp Image 2025-09-30 at 4 46 04 PM](https://github.com/user-attachments/assets/99bd4eb7-9dd8-4711-9405-b981d5eefbf7)
-
 Este proyecto es el backend de la aplicación Interfaz Estudiantil.
 Está desarrollado en Spring Boot y expone una API REST para gestionar estudiantes (crear, listar, editar y eliminar).
+![WhatsApp Image 2025-09-30 at 4 45 41 PM](https://github.com/user-attachments/assets/5e1876e8-af3b-4e41-8b98-9af45171f306)
+![WhatsApp Image 2025-09-30 at 4 46 04 PM](https://github.com/user-attachments/assets/99bd4eb7-9dd8-4711-9405-b981d5eefbf7)
 
 El frontend (Angular) consume esta API para mostrar y manipular la información.
 
@@ -22,6 +21,7 @@ Base de datos: PostgreSQL / MySQL (según configuración)
 Maven como gestor de dependencias
 
 📂 Estructura del proyecto
+
 <img width="455" height="333" alt="image" src="https://github.com/user-attachments/assets/28a8bf1e-49f1-4da0-a306-44551ef0665d" />
 
 
