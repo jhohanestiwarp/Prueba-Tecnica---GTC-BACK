@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.context.ReactiveSecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
@@ -47,6 +46,19 @@ public class StudentController {
                 .map(list -> ResponseHandler.success("Estudiantes encontrados", list))
                 .onErrorResume(e -> {
                     logger.error("Error al listar estudiantes: {}", e.getMessage());
+                    return Mono.just(ResponseHandler.error("Error interno", HttpStatus.INTERNAL_SERVER_ERROR));
+                });
+    }
+
+    @GetMapping("/{id}")
+    public Mono<ResponseEntity<Map<String, Object>>> getByID(@PathVariable Long id) {
+        logger.info("student: get by id {}", id);
+
+        return studentService.getById(id)
+                .map(student -> ResponseHandler.success("Estudiante encontrado", student))
+                .switchIfEmpty(Mono.just(ResponseHandler.error("Estudiante no encontrado", HttpStatus.NOT_FOUND)))
+                .onErrorResume(e -> {
+                    logger.error("Error al buscar el estudiante: {}", e.getMessage());
                     return Mono.just(ResponseHandler.error("Error interno", HttpStatus.INTERNAL_SERVER_ERROR));
                 });
     }

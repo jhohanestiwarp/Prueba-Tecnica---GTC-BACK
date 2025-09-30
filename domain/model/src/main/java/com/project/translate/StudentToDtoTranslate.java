@@ -13,6 +13,7 @@ public class StudentToDtoTranslate {
                 .age(student.getAge())
                 .email(student.getEmail())
                 .cellPhone(student.getCellPhone())
+                .state(student.getState())
                 .createdAt(student.getCreatedAt())
                 .build();
     }

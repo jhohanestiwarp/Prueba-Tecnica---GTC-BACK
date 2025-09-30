@@ -12,7 +12,7 @@ public interface StudentUseCase {
 
     Flux<StudentDto> getAllStudents(Long studentId, String document, String firstName, String lastName, String email);
 
-    Mono<StudentDto> getById(Long studentId);
+    Mono<Student> getById(Long studentId);
 
     Mono<Student> deleteStudent(Long id);
 }

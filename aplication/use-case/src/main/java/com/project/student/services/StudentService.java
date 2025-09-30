@@ -26,7 +26,7 @@ public class StudentService {
         return studentUseCaseImp.getAllStudents(studentId, document, firstName, lastName, email);
     }
 
-    public Mono<StudentDto> getById(Long studentId) {
+    public Mono<Student> getById(Long studentId) {
         return studentUseCaseImp.getById(studentId);
     }
 

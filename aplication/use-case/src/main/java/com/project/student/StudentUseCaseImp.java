@@ -79,9 +79,8 @@ public class StudentUseCaseImp implements StudentUseCase {
     }
 
     @Override
-    public Mono<StudentDto> getById(Long studentId) {
-        return studentRepository.findById(studentId)
-                .map(StudentToDtoTranslate::toDto);
+    public Mono<Student> getById(Long studentId) {
+        return studentRepository.findById(studentId);
     }
 
     @Override

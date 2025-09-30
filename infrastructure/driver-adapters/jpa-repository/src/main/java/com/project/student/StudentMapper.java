@@ -16,6 +16,7 @@ public class StudentMapper {
                 .age(student.getAge())
                 .email(student.getEmail())
                 .cellPhone(student.getCellPhone())
+                .state(student.getState())
                 .createdAt(student.getCreatedAt())
                 .updatedAt(student.getUpdatedAt())
                 .build());
@@ -35,6 +36,7 @@ public class StudentMapper {
                 .age(data.getAge())
                 .email(data.getEmail())
                 .cellPhone(data.getCellPhone())
+                .state(data.getState())
                 .createdAt(data.getCreatedAt())
                 .updatedAt(data.getUpdatedAt())
                 .build();
